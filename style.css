@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39 39 39);
+    color: #fff;
+    font-family: system-ui;
+}
+
+main {
+    width: 1200px;
+    margin: 5rem auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.cancion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(52, 52, 52);
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+.cancion:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.cancion .artista {
+    display: flex;
+    align-items: center;
+}
