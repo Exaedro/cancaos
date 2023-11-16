@@ -20,12 +20,16 @@ h1 {
     margin-bottom: 15px;
 }
 
-.cancion {
+.canciones {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+.cancion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 7px;
-    margin-bottom: 15px;
     border: 1px solid rgb(59, 59, 59);
     background-color: rgb(52, 52, 52);
     padding: 20px;
@@ -36,7 +40,11 @@ h1 {
     background-color: rgb(70, 70, 70);
 }
 
-.cancion .artista {
+.cancion .artista, .cancion .cancion-body {
     display: flex;
     align-items: center;
+}
+
+.cancion .cancion-body {
+    flex-direction: column;
 }
