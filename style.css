@@ -49,3 +49,20 @@ h1 {
 .cancion .cancion-body {
     flex-direction: column;
 }
+
+.albumes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.album {
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(52, 52, 52);
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.album-body {
+    margin-top: 15px;
+}
