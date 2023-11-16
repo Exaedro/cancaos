@@ -12,6 +12,10 @@
         <section class="canciones">     
             <?php include 'php/obtener_canciones.php'; ?>
         </section>
+        <h1>Albumes</h1>
+        <section class="albumes">
+            <?php include 'php/obtener_albumes.php' ?>
+        </section>
     </main>
 </body>
 </html>
