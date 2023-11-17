@@ -12,6 +12,10 @@
     </header>
     <main class="container">
         <h1>Canciones</h1>
+        <form action="php/obtener_canciones.php" method="get">
+            <input type="text" name="cancion">
+            <button type="submit">Buscar</button>
+        </form>
         <section class="canciones">     
             <?php include 'php/obtener_canciones.php'; ?>
         </section>
