@@ -11,6 +11,11 @@ body {
     font-family: system-ui;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 header {
     height: 350px;
     display: flex;
@@ -92,4 +97,42 @@ h1 {
 
 .album-body {
     margin-top: 15px;
+}
+
+/* //////////////////////// cancion.php //////////////////////// */
+
+.cancion-singular {
+    padding: 15px;
+    margin-top: 1.5rem;
+    display: flex;
+    background-color: rgb(52, 52, 52);
+    border: rgb(59, 59, 59);
+    border-radius: 7px;
+}
+
+.cancion-singular figure {
+    margin-right: 15px;
+}
+
+.cancion-singular img {
+    border-radius: 5pxdd;
+}
+
+.cancion-singular h1 {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+.cancion-singular p {
+    margin-bottom: 20px;
+}
+
+.cancion-singular ul {
+    list-style: none;
+}
+
+.cancion-singular li {
+    margin-bottom: 5px;
 }
