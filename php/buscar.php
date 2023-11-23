@@ -1,7 +1,23 @@
 <?php
 $conexion = new mysqli('localhost', 'root', '', 'canciones');
 
-$sql = "SELECT * FROM cancion c JOIN artista a ON c.idArtista = a.idArtista";
+if(!isset($_GET['cancion'])) {
+    $cancion = 'not found';
+}  else {
+    if($_GET['cancion'] == '') {
+        $cancion = 'not found';
+    } else {
+        $cancion = $_GET['cancion'];
+    }
+}
+
+if(!isset($_GET['genero'])) {
+    $generoCancion = 'not found';
+}  else {
+    $generoCancion = $_GET['genero'];
+}
+
+$sql = "SELECT * FROM cancion c JOIN artista a ON c.idArtista = a.idArtista WHERE c.titulo LIKE '%$cancion%' or c.genero LIKE '%$generoCancion%'";
 
 $resultado = $conexion -> query($sql);
 

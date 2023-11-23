@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <?php include 'partials/navbar.php' ?>
+    <main class="container">
         <?php include 'php/obtener_cancion.php' ?>
     </main>
 </body>

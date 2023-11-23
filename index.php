@@ -7,25 +7,27 @@
     <title>as melhores cancoes da historia</title>
 </head>
 <body>
-    <header>
+    <header class="header-inicio">
         <h3>AS MELHORES CANCOES DA HISTORIA</h3>
     </header>
     <main class="container">
-        <h1>Canciones</h1>
-        <form action="php/obtener_canciones.php" method="get">
-            <input type="text" name="cancion">
-            <button type="submit">Buscar</button>
-        </form>
-        <section class="canciones">     
+        <div class="buscador">
+            <h1>Canciones</h1>
+            <form action="buscador.php" method="get">
+                <input type="text" name="cancion" placeholder=". . .">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <section id="canciones" class="canciones">     
             <?php include 'php/obtener_canciones.php'; ?>
         </section>
         <h1>Albumes</h1>
-        <section class="albumes">
+        <section id="albumes" class="albumes">
             <?php include 'php/obtener_albumes.php' ?>
         </section>
     </main>
     <footer>
-        <p>Hecho por los anasheis</p>
+        <p>Hecho por Grippaldi y Leites</p>
     </footer>
 </body>
 </html>
