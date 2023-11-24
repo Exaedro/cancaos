@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>as melhores cancoes da historia</title>
+    <title>LAS MEJORES CANCIONES DE LA HISTORIA</title>
 </head>
 <body>
     <header class="header-inicio">
-        <h3>AS MELHORES CANCOES DA HISTORIA</h3>
+        <h3>LAS MEJORES CANCIONES DE LA HISTORIA</h3>
     </header>
     <main class="container">
         <div class="buscador">
