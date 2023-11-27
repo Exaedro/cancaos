@@ -12,11 +12,16 @@
     </header>
     <main class="container">
         <div class="buscador">
-            <h1>Canciones</h1>
-            <form action="buscador.php" method="get">
-                <input type="text" name="cancion" placeholder=". . .">
-                <button type="submit">Buscar</button>
-            </form>
+            <div class="form">
+                <h1>Canciones</h1>
+                <form action="buscador.php" method="get">
+                    <input type="text" name="cancion" placeholder=". . .">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="añadir">
+                <a href="agregar.php">Subir Cancion</a>
+            </div>
         </div>
         <section id="canciones" class="canciones">     
             <?php include 'php/obtener_canciones.php'; ?>

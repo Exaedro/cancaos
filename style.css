@@ -71,6 +71,7 @@ nav ul {
 .buscador {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -81,6 +82,7 @@ nav ul {
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 7px;
+    margin-left: 10px;
     padding: 7px;
     color: #efefef;
 }
@@ -92,6 +94,20 @@ nav ul {
     border-radius: 7px;
     color: #fff;
     transition: all 0.2s ease;
+}
+
+.buscador .form {
+    display: flex;
+    align-items: center;
+}
+
+.buscador .añadir a {
+    padding: 14px 36px;
+    background-color: rgb(101, 238, 158);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .buscador button:hover {
@@ -137,6 +153,7 @@ nav ul {
 
 .cancion .cancion-body {
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .albumes {
@@ -193,4 +210,80 @@ nav ul {
 
 .cancion-singular li {
     margin-bottom: 5px;
+}
+
+.cancion-singular .cancion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton-eliminar {
+    padding: 14px 36px;
+    background-color: red;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.boton-editar {
+    padding: 14px 36px;
+    background-color: rgb(204, 117, 17);
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.agregar-form {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto;
+}
+
+.agregar-form h2 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.agregar-form input, .agregar-form textarea {
+    outline: none;
+    border: 1px solid gray;
+    background-color: transparent;
+    padding: 10px 12px;
+    resize: vertical;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.agregar-form select {
+    margin: 10px 0;
+}
+
+.agregar-form textarea {
+    max-height: 250px;
+}
+
+.agregar-form button {
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 7px;
+    color: #fff;
+    transition: background 0.2s ease;
+}
+
+.agregar-form button:hover {
+    cursor: pointer;
+    background-color: gray;
 }
