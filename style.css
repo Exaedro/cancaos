@@ -103,7 +103,7 @@ nav ul {
 
 .buscador .añadir a {
     padding: 14px 36px;
-    background-color: rgb(101, 238, 158);
+    background-color: #3ec476;
     border-radius: 8px;
     color: #fff;
     font-weight: 700;
@@ -286,4 +286,41 @@ nav ul {
 .agregar-form button:hover {
     cursor: pointer;
     background-color: gray;
+}
+
+.containerArtistas {
+    margin: 50px;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.containerArtistas .artistas {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerArtistas .artistas .artista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-grow: 1;
+    background-color: #505050;
+}
+
+.containerArtistas .artistas .artista:nth-child(odd) {
+    background-color: #383838;
+}
+
+.containerArtistas .artistas span {
+    font-weight: 700;
+    font-size: 18px;
+} 
+
+.agregar-cancion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
