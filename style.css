@@ -193,6 +193,10 @@ nav ul {
     border-radius: 5pxdd;
 }
 
+.cancion-singular a {
+    color: #09f!important;
+}
+
 .cancion-singular h1 {
     font-size: 48px;
     font-weight: 800;

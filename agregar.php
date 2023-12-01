@@ -11,16 +11,16 @@
     <main class="agregar-cancion">
         <div>
             <form action="php/subir_cancion.php" method="post" class="agregar-form">
-                <h2>Subir cancion</h2>
+                <h2>Subir canción</h2>
                 <label>Titulo</label>
                 <input type="text" placeholder=". . ." required name="titulo">
                 <label>Duración</label>
                 <input type="text" name="duracion" required placeholder=". . .">
                 <label>Lanzamiento</label>
                 <input type="date" name="lanzamiento" required placeholder=". . .">
-                <label>Descripcion</label>
+                <label>Descripción</label>
                 <textarea name="descripcion" required placeholder=". . ."></textarea>
-                <label>Genero</label>
+                <label>Género</label>
                 <select name="genero" id="">
                     <option value="Rock">Rock</option>
                     <option value="Rap">Rap</option>

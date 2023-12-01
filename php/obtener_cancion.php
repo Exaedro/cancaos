@@ -17,6 +17,7 @@ while($fila = $resultado -> fetch_assoc()) {
     $nombreArtista = $fila['nombre'];
     $apellidoArtista = $fila['apellido'];
     $bandaArtista = $fila['banda'];
+    $ytlink = $fila['ytlink'];
 
     echo '<section class="cancion-singular">';
             echo '<figure>';
@@ -31,6 +32,7 @@ while($fila = $resultado -> fetch_assoc()) {
                         echo "<li><strong>Lanzamiento:</strong> $lanzamiento</li>";
                         echo "<li><strong>Duración:</strong> $duracion</li>";
                         echo "<li><strong>Genero:</strong> $genero</li>";
+                        echo "<li><strong><a href=$ytlink>Escuchar en Youtube</a></strong></li>";
                     echo "</ul>";
                 echo '</div>';
                 echo '<div class="botones">';

@@ -38,7 +38,7 @@ echo "<form action='php/editar_cancion.php' method='post' class='agregar-form'>
         <input type='text' name='duracion' required placeholder='. . .' value='$duracion'>
         <label>Lanzamiento</label>
         <input type='date' name='lanzamiento' required placeholder='. . .' value='$lanzamiento'>
-        <label>Descripcion</label>
+        <label>Descripción</label>
         <textarea name='descripcion' required placeholder='. . .'>$descripcion</textarea>
         <label>Genero</label>
         <select name='genero' id='' value='$genero'>

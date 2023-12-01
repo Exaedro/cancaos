@@ -20,13 +20,13 @@
                 </form>
             </div>
             <div class="añadir">
-                <a href="agregar.php">Subir Cancion</a>
+                <a href="agregar.php">Subir Canción</a>
             </div>
         </div>
         <section id="canciones" class="canciones">     
             <?php include 'php/obtener_canciones.php'; ?>
         </section>
-        <h1>Albumes</h1>
+        <h1>Álbumes</h1>
         <section id="albumes" class="albumes">
             <?php include 'php/obtener_albumes.php' ?>
         </section>

@@ -22,7 +22,7 @@ while($fila = $resultado -> fetch_assoc()) {
                 echo '</div>';
                 echo '<div class="cancion-body">';
                     echo "<h3>$titulo - $genero</h3>";
-                    echo "<p>$duracion / $lanzamiento</p>";
+                    echo "<p>$duracion / $lanzamiento</p>"; 
                 echo '</div>';
         echo '</section>';
     echo '</a>';
